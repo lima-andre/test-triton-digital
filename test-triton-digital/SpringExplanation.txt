@@ -1,0 +1,15 @@
+This is one Bean declaration of Spring Framework.
+
+The First property is  "id"  "myTestBean" that is the bean name or reference for use this Bean.
+
+The next property is a "class"  "com.stw.core.person.Person", responsible to create the Bean via factory method call "createNew".
+
+The  next is "scope" "prototype" this means that an instance of a new bean is made every time there is a request for this bean.
+
+The next is "depends-on" this means that the bean "dataSource" will be initialized before any instance of the bean "myTestBean" will be created.
+
+The bean will have 2 of its properties initialize which are : 1 - "firstname", 2 -"phone".
+
+"firstName" will be set using the value of the property "first.name" which is found in a property file.
+
+property "phone" will be set via a reference value, this means that its value will be that of another bean.
